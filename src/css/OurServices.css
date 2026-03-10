@@ -123,31 +123,6 @@
   min-height: 60px;           /* ✅ aligns all text blocks */
 }
 
-/* CTA */
-.os-ctaWrap {
-  margin-top: 60px;
-  display: flex;
-  justify-content: center;
-}
-
-.os-cta {
-  margin-top: 10px;
-  background: transparent;
-  border: 1px solid rgba(187, 162, 75, 0.55);
-  color: rgba(187, 162, 75, 0.95);
-  font-family: "Lato", sans-serif;
-  font-size: 12px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  padding: 15px 40px;
-  cursor: pointer;
-}
-
-.os-cta:hover {
-  transform: translateY(-1px);
-  background: rgba(187, 162, 75, 0.08);
-}
-
 /* RESPONSIVE */
 @media (max-width: 980px) {
   .os-container {
@@ -165,10 +140,6 @@
 
   .os-imgWrap {
     height: 210px;
-  }
-
-  .os-ctaWrap {
-    margin-top: 34px;
   }
 
   .os-spacer {

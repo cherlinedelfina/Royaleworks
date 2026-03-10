@@ -1,6 +1,5 @@
 import React from 'react';
 import Clients from '../components/Home/Clients';
-import Cta from '../components/Cta';
 import Footer from '../components/Footer';
 import Hero from '../components/Home/Hero';
 import NavBar from '../components/Navbar/NavBar';

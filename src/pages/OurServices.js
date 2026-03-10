@@ -75,12 +75,6 @@ const OurServices = () => {
                 </article>
               ))}
             </div>
-
-            <div className="os-ctaWrap">
-              <a className="os-cta" href="/contact">
-                BOOK YOUR CLEAN TODAY
-              </a>
-            </div>
           </div>
         </section>
       </main>
