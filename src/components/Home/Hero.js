@@ -1,5 +1,4 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
 import heroBg from "../../images/hero-cleaning.png";
 import "../../css/Hero.css";
 
