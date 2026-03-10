@@ -1,0 +1,36 @@
+/* Bellota Text from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300;400;700&display=swap");
+
+/* Baskerville SC from local font file (TTC) */
+@font-face {
+  font-family: "BaskervilleSC";
+  src: url("../fonts/Baskerville.ttc") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.hero-title {
+    font-family: "BaskervilleSC", "Times New Roman", serif;
+    font-size: clamp(40px, 4.0vw, 50px);
+
+    letter-spacing: 0.15em;
+    line-height: 1.30;
+    font-weight: 200;
+    text-transform: uppercase;
+  }
+  
+
+.hero-subtitle {
+  font-family: "Bellota Text", sans-serif;
+  font-size: clamp(13px, 1.3vw, 16px);
+  letter-spacing: 0.20em;
+  line-height: 1.0;
+  text-transform: none;
+}
+
+.hero-logo-text {
+  font-family: "BaskervilleSC", "Times New Roman", serif;
+  font-size: 22px;
+  letter-spacing: 0.06em;
+  font-weight: 400;
+}

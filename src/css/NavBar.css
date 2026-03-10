@@ -1,0 +1,187 @@
+/* Put this in: src/css/NavBar.css */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+.rw-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+  background: rgba(11, 42, 74);
+}
+
+/* ===== CONTAINER ===== */
+.rw-nav__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 40px;
+}
+
+/* ===== DESKTOP LAYOUT ===== */
+.rw-nav__desktop {
+    display: flex;
+    flex-direction: column; /* 🔥 STACK */
+    align-items: center;
+    gap: 10px;
+  }
+
+.rw-nav__linksRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+    flex-wrap: wrap;
+  }
+
+/* LEFT / RIGHT GROUPS */
+.rw-nav__group {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+  flex: 1;
+}
+
+.rw-nav__group--left {
+  justify-content: flex-end;
+}
+
+.rw-nav__group--right {
+  justify-content: flex-start;
+}
+
+/* LINKS */
+.rw-nav__link {
+  font-family: "Lato", sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  transition: 0.25s ease;
+  white-space: nowrap;
+}
+
+.rw-nav__link:hover {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+/* ===== CENTER LOGO ===== */
+.rw-nav__logoWrap {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rw-nav__logoLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+/* 🔥 KEY FIX: clean big logo without breaking layout */
+.rw-nav__logoImg {
+  height: 64px;   /* 🔥 PERFECT SIZE (balanced, not breaking layout) */
+  width: auto;
+  display: block;
+}
+
+/* ===== MOBILE ===== */
+.rw-nav__mobile {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rw-nav__mobileBrand {
+  text-decoration: none;
+}
+
+/* RW box (mobile logo) */
+.rw-nav__logoBox {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rw-nav__logoText {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: white;
+}
+
+/* BURGER */
+.rw-nav__burger {
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.rw-nav__burgerLine {
+  width: 18px;
+  height: 2px;
+  background: white;
+}
+
+/* ===== DRAWER ===== */
+.rw-nav__drawer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 72px; /* matches navbar height */
+  background: rgba(11, 42, 74, 0.98);
+  transform: translateY(-120%);
+  transition: transform 280ms ease;
+  padding: 20px 0;
+}
+
+.rw-nav__drawer--open {
+  transform: translateY(0);
+}
+
+.rw-nav__drawerInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.rw-nav__drawerLink {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .rw-nav__desktop {
+    display: none;
+  }
+
+  .rw-nav__mobile {
+    display: flex;
+  }
+
+  .rw-nav__inner {
+    padding: 12px 18px;
+  }
+
+  .rw-nav__drawer {
+    top: 68px;
+  }
+}

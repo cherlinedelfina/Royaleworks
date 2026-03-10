@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Bellota+Text:wght@400;700&display=swap");
+
+.services-section {
+  width: 100%;
+  background: #ffffff;
+  padding: 95px 0 85px;
+}
+
+.services-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.services-title {
+  font-family: "Bellota Text", sans-serif;
+  font-size: 35px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #0b2a4a;
+  margin: 0 0 10px;
+}
+
+.services-subtitle {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 1.8;
+  letter-spacing: 0.1em;
+  color: #393939;
+  max-width: 820px;
+  margin: 8px auto 60px;
+}
+
+/* Carousel wrapper */
+.services-carousel {
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Track */
+.services-track {
+  display: flex;
+  align-items: stretch; /* ✅ makes slides same height */
+  will-change: transform;
+}
+
+/* ✅ transition only when JS adds the class */
+.services-track.with-transition {
+  transition: transform 650ms ease;
+}
+
+/* Slides */
+.service-slide {
+  flex: 0 0 calc(100% / 3);
+  padding: 0 18px;
+  box-sizing: border-box;
+
+  display: flex;        /* ✅ */
+  align-items: stretch; /* ✅ */
+}
+
+/* Card */
+.service-card {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+
+  display: flex;          /* ✅ */
+  flex-direction: column; /* ✅ */
+  height: 100%;           /* ✅ */
+}
+
+/* Image */
+.service-imgWrap {
+  width: 100%;
+  height: 165px;
+  overflow: hidden;
+  background: #f3f3f3;
+  flex-shrink: 0; /* ✅ prevents shrinking */
+}
+
+.service-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Caption */
+.service-caption {
+  background: #0b2a4a;
+  padding: 25px 16px 30px;
+
+  flex: 1; /* ✅ makes all cards match tallest */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* PERFECT UNIFORM ALIGNMENT */
+.service-caption h4 {
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #bba24b;
+  margin: 0 0 10px;
+
+  min-height: 44px; /* ✅ keeps titles aligned */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-caption p {
+  font-family: "Lato", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.7;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  min-height: 60px; /* ✅ keeps description aligned */
+}
+
+/* Dots */
+.services-dots {
+  margin-top: 25px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(187, 162, 75, 0.25);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.dot.active {
+  background: rgba(187, 162, 75, 0.9);
+}
+
+/* Button */
+.services-button {
+  margin-top: 0px;
+  background: transparent;
+  border: 1px solid rgba(187, 162, 75, 0.55);
+  color: rgba(187, 162, 75, 0.95);
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 15px 40px;
+  cursor: pointer;
+}
+
+.services-button:hover {
+  transform: translateY(-1px);
+  background: rgba(187, 162, 75, 0.08);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .services-container {
+    padding: 0 24px;
+  }
+
+  .service-slide {
+    flex: 0 0 100%;
+    padding: 0 10px;
+    display: flex;
+    align-items: stretch;
+  }
+
+  .service-imgWrap {
+    height: 200px;
+  }
+}

@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Bellota+Text:wght@400;700&display=swap");
+
+.about-page {
+    width: 100%;
+    background: white;
+    padding: 80px 0;
+  }
+  
+  /* THIS is what gives margin left/right */
+  .about-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;   /* ✅ left/right margin */
+  }
+  
+
+.about-spacer {
+  height: 110px;
+}
+.about-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;   /* ✅ make both equal */
+    gap: 90px;
+    align-items: center;             /* ✅ align top edges */
+    margin-bottom: 110px;
+  }
+  
+  .about-row--reverse {
+    grid-template-columns: 1fr 1fr;  /* ✅ equal also */
+  }
+  
+  /* make sure text stretches full width */
+  .about-text {
+    width: 100%;
+    max-width: 520px;
+    justify-self: start;             /* ✅ lock text to left edge */
+  }
+  
+  .about-text--right {
+    justify-self: end;               /* ✅ lock text to right edge */
+    text-align: left;
+  }
+  
+  /* make image wrapper align to edge */
+  .about-imageWrap--right {
+    justify-self: end;               /* ✅ lock image to right edge */
+  }
+  
+  .about-imageWrap--left {
+    justify-self: start;             /* ✅ lock image to left edge */
+  }
+  
+  /* make image width match text block */
+  .about-image {
+    width: 400px;                    /* ✅ same as text max-width */
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+  
+
+
+.about-kicker {
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(11, 42, 74, 0.75);
+  margin-bottom: 10px;
+}
+
+.about-highlight {
+  font-family: "Lato", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  line-height: 1.55;
+  color: rgba(187, 162, 75, 0.95);
+  max-width: 520px;
+  margin: 0 0 50px;
+}
+
+.about-paragraph {
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  line-height: 1.9;
+  color: #393939;
+  margin: 0 0 15px;
+  max-width: 520px;
+}
+
+/* Responsive */
+@media (max-width: 980px) {
+  .about-container {
+    padding: 0 24px;
+  }
+
+  .about-row,
+  .about-row--reverse {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-bottom: 70px;
+  }
+
+  .about-text {
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .about-text--right {
+    justify-self: start;
+  }
+
+  .about-image {
+    width: 100%;
+    max-width: 520px;
+  }
+
+  .about-spacer {
+    height: 90px;
+  }
+}

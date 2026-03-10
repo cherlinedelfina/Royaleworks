@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+.clients-section {
+  width: 100%;
+  background: #ffffff;
+  padding: 90px 0;
+}
+
+.clients-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 40px;
+  text-align: center;
+}
+
+.clients-title {
+    font-family: "Bellota Text", sans-serif;
+    font-size: 35px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #0b2a4a;
+    margin-bottom: 50px;
+  }
+
+.clients-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+  flex-wrap: wrap;
+}
+
+.client-logo img {
+  height: 70px;
+  width: auto;
+  opacity: 0.55;
+  transition: all 0.3s ease;
+}
+
+.client-logo img:hover {
+  opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .clients-container {
+    padding: 0 24px;
+  }
+
+  .clients-logos {
+    gap: 40px;
+  }
+
+  .client-logo img {
+    height: 45px;
+  }
+}
