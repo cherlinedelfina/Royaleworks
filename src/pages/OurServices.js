@@ -75,6 +75,12 @@ const OurServices = () => {
                 </article>
               ))}
             </div>
+
+            <div className="os-bookWrap">
+              <a className="services-button" href="/contact">
+                BOOK YOUR SERVICE NOW
+              </a>
+            </div>
           </div>
         </section>
       </main>

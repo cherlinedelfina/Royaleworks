@@ -67,15 +67,15 @@ const Footer = () => {
 
           <a
             className="rw-footer__contact muted"
-            href="mailto:leo.tiu@royaleworks.com.au"
+            href="mailto:royaleworks23@gmail.com"
           >
-            leo.tiu@royaleworks.com.au
+            royaleworks23@gmail.com
           </a>
 
           <div className="rw-footer__socials" aria-label="social links">
             <a
               className="rw-footer__social"
-              href="https://www.instagram.com/royaleworkscleaningandco"
+              href="https://www.instagram.com/royaleworks.com.au"
               target="_blank"
               rel="noreferrer"
               aria-label="Instagram"
@@ -99,13 +99,13 @@ const Footer = () => {
 
             <a
               className="rw-footer__social"
-              href="https://x.com"
+              href="https://www.linkedin.com/in/royale-works-cleaning-and-co-ab726b270/"
               target="_blank"
               rel="noreferrer"
-              aria-label="X"
+              aria-label="LinkedIn"
             >
               <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                <path d="M18.9 2H22l-6.8 7.8L23 22h-6.5l-5.1-6.6L5.8 22H2.7l7.3-8.4L1 2h6.6l4.6 6 6.7-6Zm-1.1 18h1.7L6.7 3.9H5L17.8 20Z" />
+                <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.11 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V23h-4V8zm7 0h3.8v2.1h.1c.5-1 1.9-2.1 3.9-2.1 4.2 0 5 2.7 5 6.2V23h-4v-7.7c0-1.8 0-4.1-2.5-4.1s-2.9 2-2.9 4V23h-4V8z"/>
               </svg>
             </a>
           </div>

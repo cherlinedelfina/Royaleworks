@@ -4,8 +4,10 @@ import "../css/Reviews.css";
 
 import NavBar from "../components/Navbar/NavBar";
 import Footer from "../components/Footer";
-
-import avatarImg from "../images/reviews/avatar.png"; // create/replace if needed
+import ivanImg from "../images/reviews/Ivan.jpg";
+import sophiaImg from "../images/reviews/Sophia.jpg";
+import kathrynImg from "../images/reviews/Kathryn.jpg";
+import avatarImg from "../images/reviews/avatar.png"; 
 
 const Reviews = () => {
   const reviews = useMemo(
@@ -55,6 +57,13 @@ const Reviews = () => {
     ],
     []
   );
+
+  const getAvatar = (name) => {
+    if (name === "Ivan Lee") return ivanImg;
+    if (name === "Sophia Adrao") return sophiaImg;
+    if (name === "Kathryn Wong") return kathrynImg;
+    return avatarImg;
+  };
 
   const getSlidesPerView = () => (window.innerWidth <= 900 ? 1 : 3);
 
@@ -147,7 +156,7 @@ const Reviews = () => {
                   <div className="rv-slide" key={`${r.name}-${i}`}>
                     <article className="rv-card">
                       <div className="rv-avatarWrap">
-                        <img className="rv-avatar" src={avatarImg} alt={r.name} />
+                        <img className="rv-avatar" src={getAvatar(r.name)} alt={r.name} />
                       </div>
 
                       <h3 className="rv-name">{r.name}</h3>

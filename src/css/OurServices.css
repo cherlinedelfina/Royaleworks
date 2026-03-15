@@ -47,6 +47,7 @@
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 58px 56px;
   justify-items: center;
+  margin-bottom: 70px;
   align-items: stretch; /* ✅ ensures equal height */
 }
 
@@ -140,6 +141,32 @@
 
   .os-imgWrap {
     height: 210px;
+  }
+
+  .os-bookWrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+  }
+
+  .services-button {
+    margin-top: 0px;
+    background: transparent;
+    border: 1px solid rgba(187, 162, 75, 0.55);
+    color: rgba(187, 162, 75, 0.95);
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 15px 40px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  
+  .services-button:hover {
+    transform: translateY(-1px);
+    background: rgba(187, 162, 75, 0.08);
   }
 
   .os-spacer {

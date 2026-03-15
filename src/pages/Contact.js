@@ -17,7 +17,7 @@ const Contact = () => {
     const subject = encodeURIComponent(`Contact Form - ${form.name}`);
     const body = encodeURIComponent(form.message);
   
-    window.location.href = `mailto:Cherline.delfina@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:royaleworks23@gmail.com?subject=${subject}&body=${body}`;
   };
 
   return (
@@ -59,7 +59,7 @@ const Contact = () => {
                         />
                       </svg>
                     </span>
-                    <span className="contact-text">email@gmail.com</span>
+                    <span className="contact-text">royaleworks23@gmail.com</span>
                   </div>
 
                   <div className="contact-row">
