@@ -13,7 +13,7 @@ import commercialImg from "../images/services/commercial.png";
 import deepImg from "../images/services/deep_clean.png";
 import gymImg from "../images/services/gym.png";
 import cafeImg from "../images/services/cafe.png";
-import educationImg from "../images/services/educationImg.png";
+import educationImg from "../images/services/education.png";
 
 const OurServices = () => {
   const items = [

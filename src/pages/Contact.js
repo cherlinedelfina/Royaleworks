@@ -7,18 +7,20 @@ import contactBg from "../images/services/premium_residential.png";
 
 const Contact = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
-
-  const onChange = (e) =>
-    setForm((p) => ({ ...p, [e.target.name]: e.target.value }));
-
+  const [sent, setSent] = useState(false);
   const [loading, setLoading] = useState(false);
+
+  const onChange = (e) => {
+    setSent(false);
+    setForm((p) => ({ ...p, [e.target.name]: e.target.value }));
+  };
 
   const onSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-  
+
     try {
-      await fetch("https://formsubmit.co/ajax/cherline.delfina@gmail.com", {
+      await fetch("https://formsubmit.co/ajax/efd2f346331ce0f94fc08e5900179246", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -26,19 +28,15 @@ const Contact = () => {
         },
         body: JSON.stringify(form),
       });
-  
-      alert("Message sent!");
-      setForm({ name: "", email: "", message: "" });
-    } catch {
-      alert("Something went wrong.");
-    }
-  
-    setLoading(false);
-  };
 
-  <button className="submit" type="submit" disabled={loading}>
-    {loading ? "SENDING..." : "SUBMIT"}
-  </button>
+      setForm({ name: "", email: "", message: "" });
+      setSent(true);
+    } catch (error) {
+      console.error("Form submission error:", error);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <>
@@ -53,7 +51,6 @@ const Contact = () => {
 
           <div className="contact-container">
             <div className="contact-grid">
-              {/* LEFT */}
               <div className="contact-left">
                 <h1 className="contact-title">CONTACT US</h1>
 
@@ -96,7 +93,6 @@ const Contact = () => {
                 </div>
               </div>
 
-              {/* RIGHT */}
               <div className="contact-right">
                 <form className="contact-form" onSubmit={onSubmit}>
                   <div className="field">
@@ -108,6 +104,7 @@ const Contact = () => {
                       onChange={onChange}
                       type="text"
                       autoComplete="name"
+                      required
                     />
                   </div>
 
@@ -120,6 +117,7 @@ const Contact = () => {
                       onChange={onChange}
                       type="email"
                       autoComplete="email"
+                      required
                     />
                   </div>
 
@@ -130,16 +128,22 @@ const Contact = () => {
                       name="message"
                       value={form.message}
                       onChange={onChange}
+                      required
                     />
                   </div>
 
-                  <button className="submit" type="submit">
-                    SUBMIT
+                  <button className="submit" type="submit" disabled={loading}>
+                    {loading ? "SENDING..." : "SUBMIT"}
                   </button>
+
+                  {sent && (
+                    <p className="success-text">
+                      Message submitted successfully!
+                    </p>
+                  )}
                 </form>
               </div>
 
-              {/* divider lines */}
               <div className="contact-divider-v" />
               <div className="contact-divider-h" />
             </div>

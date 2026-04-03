@@ -31,6 +31,14 @@ body {
     align-items: center;
   }
   
+  .success-text {
+    margin-top: 12px;
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    text-align: center;  
+    width: 100%;        
+    color: rgba(255, 255, 255, 0.78);
+  }
 .contact-overlay {
   position: absolute;
   inset: 0;
