@@ -11,6 +11,9 @@ import luxuryResetImg from "../images/services/luxury_reset.png";
 import endOfLeaseImg from "../images/services/end_of_lease.png";
 import commercialImg from "../images/services/commercial.png";
 import deepImg from "../images/services/deep_clean.png";
+import gymImg from "../images/services/gym.png";
+import cafeImg from "../images/services/cafe.png";
+import educationImg from "../images/services/educationImg.png";
 
 const OurServices = () => {
   const items = [
@@ -43,6 +46,21 @@ const OurServices = () => {
       title: "LUXURY RESET™",
       desc: "Our signature home transformation — cleaning + styling + aesthetic reset.",
       img: luxuryResetImg,
+    },
+    {
+      title: "GYM & FITNESS FACILITY CLEANING",
+      desc: "High-standard cleaning for gyms and fitness spaces, with attention to hygiene and high-touch equipment.",
+      img: gymImg,
+    },
+    {
+      title: "LEARNING SPACE CLEANING",
+      desc: "Cleaning for schools, childcare centres, and learning environments with a focus on safety and consistency.",
+      img: educationImg,
+    },
+    {
+      title: "FOOD VENUE COMPLIANCE CLEANING",
+      desc: "Detailed cleaning designed to meet food safety standards and support successful council inspections.",
+      img: cafeImg,
     }
   ];
 

@@ -11,14 +11,34 @@ const Contact = () => {
   const onChange = (e) =>
     setForm((p) => ({ ...p, [e.target.name]: e.target.value }));
 
-  const onSubmit = (e) => {
+  const [loading, setLoading] = useState(false);
+
+  const onSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
   
-    const subject = encodeURIComponent(`Contact Form - ${form.name}`);
-    const body = encodeURIComponent(form.message);
+    try {
+      await fetch("https://formsubmit.co/ajax/cherline.delfina@gmail.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(form),
+      });
   
-    window.location.href = `mailto:royaleworks23@gmail.com?subject=${subject}&body=${body}`;
+      alert("Message sent!");
+      setForm({ name: "", email: "", message: "" });
+    } catch {
+      alert("Something went wrong.");
+    }
+  
+    setLoading(false);
   };
+
+  <button className="submit" type="submit" disabled={loading}>
+    {loading ? "SENDING..." : "SUBMIT"}
+  </button>
 
   return (
     <>
