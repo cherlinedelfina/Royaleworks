@@ -20,7 +20,7 @@ const Contact = () => {
     setLoading(true);
 
     try {
-      await fetch("https://formsubmit.co/ajax/efd2f346331ce0f94fc08e5900179246", {
+      await fetch("https://formsubmit.co/ajax/royaleworks23@gmail.com", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
