@@ -1,9 +1,9 @@
 import React from "react";
 import "../../css/Clients.css";
 
-import kws from "../../images/clients/kws.png";
-import geps from "../../images/clients/geps.png";
-import protergia from "../../images/clients/protergia.png";
+import kws from "../../images//partner/partners_logo1.png";
+import geps from "../../images//partner/partners_logo2.png";
+import protergia from "../../images/partner/partners_logo3.jpg";
 
 const Clients = () => {
   return (
