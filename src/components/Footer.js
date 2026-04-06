@@ -67,9 +67,9 @@ const Footer = () => {
 
           <a
             className="rw-footer__contact muted"
-            href="mailto:royaleworks23@gmail.com"
+            href="mailto:Cleaning@royaleworks.com.au"
           >
-            royaleworks23@gmail.com
+            Cleaning@royaleworks.com.au
           </a>
 
           <div className="rw-footer__socials" aria-label="social links">

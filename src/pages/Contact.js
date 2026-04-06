@@ -20,7 +20,7 @@ const Contact = () => {
     setLoading(true);
 
     try {
-      await fetch("https://formsubmit.co/ajax/royaleworks23@gmail.com", {
+      await fetch("https://formsubmit.co/ajax/Cleaning@royaleworks.com.au", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -76,7 +76,7 @@ const Contact = () => {
                         />
                       </svg>
                     </span>
-                    <span className="contact-text">royaleworks23@gmail.com</span>
+                    <span className="contact-text">Cleaning@royaleworks.com.au</span>
                   </div>
 
                   <div className="contact-row">
