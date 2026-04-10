@@ -3,7 +3,7 @@
 
 .intro-section {
     width: 100%;
-    background: #F5F4DE;
+    background: #fff;
     padding: 80px 0; /* remove side padding here */
   }
   
@@ -74,7 +74,7 @@
 .intro-icon {
   width: 22px;
   height: 22px;
-  background: #f4f0d7;
+  background: #fff;
   border-radius: 4px;
   display: flex;
   align-items: center;
@@ -98,7 +98,7 @@
 .intro-image-wrapper {
   width: 420px;
   max-width: 100%;
-  background: #F5F4DE;
+  background: #fff;
   padding: 12px;
 }
 
