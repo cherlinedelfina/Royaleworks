@@ -19,7 +19,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-[95vh] w-full overflow-hidden flex flex-col"
+      className="relative min-h-[100vh] w-full overflow-hidden flex flex-col"
     >
       {heroImages.map((img, index) => (
         <div
